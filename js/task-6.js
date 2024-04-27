@@ -28,7 +28,7 @@ function createBoxes() {
         box.style.backgroundColor = getRandomHexColor();
         boxes.push(box);
     }
-    
+    destroyBoxes();
     boxesContainer.append(...boxes);
     input.value = '';
 }
